@@ -1,0 +1,172 @@
+/*custom font*/
+@font-face {
+    font-family: DelaGothicOne;
+    src: url("DelaGothicOne-Regular.ttf");
+}
+
+/*universal*/
+* {
+    background-color: beige;
+}
+
+/*title of journal*/
+#journalTitle{
+    color: olive;
+}
+
+/* day of the journal entry */
+h2 {
+    color: rgb(100, 120, 30);
+    font-size: 1cm;
+    text-decoration: underline;
+    text-align: center;
+    font-family: DelaGothicOne;
+}
+
+/* date of the journal entry */
+h3 {
+    color: #add8e6;
+    font-size: 20px;
+}
+
+/* highlight, lowlight, todo title */
+h4 {
+    color: hsl(100, 80%, 20%);
+    font-size: 6mm;
+}
+
+/* highlight and lowlight content*/
+ul {
+    color: orange;
+    font-size: 1em;
+    display: inline-block;
+}
+
+/*todo content*/
+ol {
+    font-size: 2ch;
+    display: block;
+}
+
+/*todo, highlight, lowlight content*/
+ul, ol{
+    font-weight: bold;
+}
+
+/*journal title*/
+header{
+    background-color: purple;
+    font-size: 2ex;
+}
+
+/*day 1, day 2, day 3, new day*/
+section {
+    background-color: beige;
+}
+
+/*day 1*/
+.day1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: static;
+}
+
+/*image, sound, video of day 1*/
+.day1Visuals {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+/*day 2*/
+.day2 {
+    margin: 50px 50px 50px 50px;
+    position: relative;
+    height: 1000px;
+    width: 90%;
+}
+
+/*image, sound, video of day 1*/
+.day2Visuals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/*day 3*/
+.day3 {
+    border-style: dashed; 
+    border-color: brown;
+    border-width: 2px;
+    border-radius: 25px;
+    margin: auto;
+}
+
+/*beach picture*/
+.beach {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*lunch picture*/
+.lunch {
+    padding: 20px 20px 20px 20px;
+}
+
+/*new journal entry*/
+.newDay{
+    max-width: 1200px;
+    min-width: 1000px;
+}
+
+/*submit button hover*/
+button:hover {
+    background-color:blueviolet;
+}
+
+/*submit button active*/
+button:active {
+    background-color: red;
+}
+
+/*UCSD CSE link*/
+a[href="https://cse.ucsd.edu/"] {
+    color: green;
+}
+
+/*date of journal*/
+div h3{
+    text-decoration: underline;
+}
+
+/*summary of day*/
+section > p {
+    color:brown;
+}
+
+/*contents todo*/
+ul ~ ol{
+    text-decoration: underline;
+}
+
+/*content of highilghts and lowlights*/
+h4 + ul {
+    text-decoration: underline;
+}
+
+/*day and date of journal*/
+div.dayTitle{
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+      background-color: lightblue;
+    }
+}
