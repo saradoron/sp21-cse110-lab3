@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>Sara's 3 Day Journal</title>
         <meta charset="UTF-8">
         <meta name="description" content="3 Day Journal">
@@ -10,11 +11,14 @@
         <link rel="icon" href="amazon.png">
     </head>
     <body>
+        <style>
+            h1 {color:pink;}
+        </style>
         <header>
-            <h1>Sara's 3 Day Journal</h1>
+            <h1 id="journalTitle">Sara's 3 Day Journal</h1>
         </header>
         <main>
-            <section>
+            <section class="day1">
                 <div class = "dayTitle">
                     <h2>Day 1</h2>
                     <h3>4/8/2021</h3>
@@ -36,24 +40,26 @@
                     <li>Pay <b>bills</b></li>
                 </ol>
                 <p>Today is <strong>Thursday</strong>. I feel very <span style="color:blue">overwhelmed</span>  because I have a lot of work to do this week <br> and studying for my <i>interview</i> tomrrow is causing me to get <em>behind</em> in my classes. <br> but going to <a href="https://www.delmar.ca.us/203/Beaches-Parks">Del Mar</a> was fun!</p>
-                <picture>
-                    <img src = "beach.jpg" alt="beach" width = "200" height = "300">
-                </picture>
-                <audio controls>
-                    <source src = "oceans.m4a">
-                </audio>
-                <video width="320" height="240" controls>
-                    <source src="beachVid.mp4">
-                </video>
+                <section class="day1Visuals">
+                    <picture class="beach">
+                        <img src = "beach.jpg" alt="beach" width = "200" height = "300">
+                    </picture>
+                    <audio controls>
+                        <source src = "oceans.m4a">
+                    </audio>
+                    <video width="320" height="240" controls>
+                        <source src="beachVid.mp4">
+                    </video>
+                </section>
                 <details>
                     <summary>Del Mar Beach</summary>
                     <p>Parking is hard to find here so go early in the morning!</p>
-                  </details>
+                </details>
             </section>
             
             <hr>
 
-            <section>
+            <section class="day2">
                 <div class = "dayTitle">
                     <h2>Day 2</h2>
                     <h3>4/9/2021</h3>
@@ -71,23 +77,25 @@
                 <h4>To Do</h4>
                 <ol>
                     <li>Go get birthday gift for friend</li>
-                    <li>Finish math 183 <b>hw</b>> assingment</li>
+                    <li>Finish math 183 <b>hw</b> assingment</li>
                 </ol>
                 <p>Today is <strong>Friday</strong>. The <span style="color:blue">interview</span> went well. I want to know wheather I got the <i>internship</i> <br> or not because I am tired to applying and doing interviews. I had been a <em>long</em> process. <br> But going to <a href="https://sushiota.com/">sushi</a> was fun!</p>
-                <picture>
-                    <img src = "lunch.jpeg" alt="lunch" width = "200" height = "300">
-                </picture>
-                <audio controls>
-                    <source src = "heatWaves.m4a">
-                </audio>
-                <video width="320" height="240" controls>
-                    <source src="lunchVid.mp4">
-                </video>
+                <section class="day2Visuals">
+                    <picture class="lunch">
+                        <img src = "lunch.jpeg" alt="lunch" width = "200" height = "300">
+                    </picture>
+                    <audio controls>
+                        <source src = "heatWaves.m4a">
+                    </audio>
+                    <video width="320" height="240" controls>
+                        <source src="lunchVid.mp4">
+                    </video>
+                </section>
             </section>
             
             <hr>
 
-            <section>
+            <section class="day3">
                 <div class = "dayTitle">
                     <h2>Day 3</h2>
                     <h3>4/10/2021</h3>
@@ -109,7 +117,7 @@
                     <li>Finish cse 110 lab</li>
                 </ol>
                 <p>Today is <strong>Saturday</strong>. It is the <span style="color:blue">weekend</span>  so I want to fully <em>enjoy</em> it, but instead <br> I have to take a <i>quiz</i> and catch up on a lot of work. <br> But going to <a href="http://www.welcometosandiego.com/kate-sessions-park/">Kate Sessions Park</a> was fun!</p>
-                <picture>
+                <picture class="picnic">
                     <img src = "picnic.jpeg" alt="picnic" width = "200" height = "300">
                 </picture>
                 <audio controls>
@@ -122,7 +130,7 @@
 
             <hr>
 
-            <section>
+            <section class="newDay">
                 <form action="/action_page.php" method="get">
                     <fieldset>
                         <input type="radio">
